@@ -1,0 +1,43 @@
+/* Swiper container styling */
+.swiper-container {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* Make the slider responsive */
+@media (max-width: 768px) {
+    .swiper-container {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .swiper-container {
+        height: 250px;
+    }
+}
+
+/* Optional: Style for navigation buttons */
+.swiper-button-prev, .swiper-button-next {
+    color: #000;
+}
+
+/* Optional: Style for pagination */
+.swiper-pagination-bullet {
+    background-color: #000;
+}
